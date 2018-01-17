@@ -1,0 +1,179 @@
+<!doctype html>
+
+	<head>
+		<title>Acceuil - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!--meta info-->
+		
+		<link rel="icon" type="image/ico" href="images/fav.ico" />
+		<!--stylesheet include-->
+		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/jquery.custom-scrollbar.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/index.css" />
+		
+		
+		<script src="bootstrap/js/jquery.js"></script>
+		<script src="js/modernizr.js"></script>
+		
+	</head>
+	<body>
+		<!--boxed layout-->
+		<div class="boxed_layout relative w_xs_auto">
+			<header role="banner">
+				<!--header top part-->
+				<section class="h_top_part">
+					<div class="container">
+						<div class="row clearfix">
+							<div class="col-lg-4 col-md-4 col-sm-5 t_xs_align_c">
+								<p class="f_size_small">Tous vos rendez-vous	<a href="#" data-popup="#login_popup">Login</a> or <a href="#">Creez un compte</a> </p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-2 t_align_c t_xs_align_c">
+								<p class="f_size_small">Contactez nous au: <b class="color_dark">(221) 77 621 64 59</b></p>
+							</div>
+							<nav class="col-lg-4 col-md-4 col-sm-5 t_align_r t_xs_align_c">
+								<ul class="d_inline_b horizontal_list clearfix f_size_small users_nav">
+									<li><a href="#" class="default_t_color">Mon compte</a></li>
+									
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</section>
+				<!--header bottom part-->
+				<section class="h_bot_part container">
+					<div class="clearfix row">
+						<div class="col-lg-12 col-md-12 col-sm-12 t_xs_align_c">
+							<a href="index.html" class="logo m_xs_bottom_15 d_xs_inline_b">
+								<img class="c_logo" src="images/logo.png" alt="">
+							</a>
+						</div>
+						
+					</div>
+				</section>
+				
+				
+	<!--main menu container-->
+				<!--main menu container-->
+<section class="menu_wrap relative layout_milieu">
+		<div class="container-fluid">
+			<div class="clearfix row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div id='cssmenu'>
+					<ul>
+							<li><a href='#' ><span>Acceuil</span></a></li>
+							<li class='active has-sub'><a href='#'><span>Produits</span></a>
+							<ul>
+								<li class='has-sub'><a class="" href='#'><span>Produit 1</span></a>
+									<ul>
+									<li><a href='#'><span>Sous Produit</span></a></li>
+									<li class='last'><a href='#'><span>Sous Produit</span></a></li>
+									</ul>
+								</li>
+								<li class='has-sub'><a href='#'><span>Produit 2</span></a>
+									<ul>
+									<li><a href='#'><span>Sous Produit</span></a></li>
+									<li class='last'><a href='#'><span>Sous Produit</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href='#'><span>Reserver un RV</span></a></li>
+						<li class='last'><a href='#'><span>Contact</span></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+</section>
+				
+			</header>
+			
+			
+			<!--content-->
+			<section class="container">
+					<div class="row clearfix">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="image_slide">
+							<a href="#">
+							<img name="nameAttribut" src = "images/lide1.jpg"></a>
+						</div>
+						</div>
+				</div>
+	    </section>
+		<section class="container clearfix">
+			<div class="row adviticement">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					PRENEZ TOUS VOS RENDEZ-VOUS ICI
+				</div>
+			</div>	
+		</section>
+			</div>
+  <footer class="container clearfix">
+	   <ul class="bottompage">
+		 	<div class="row">	
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h1>Contacts</h1>
+				<li>webmaster thies</li>
+				<li>master genie logiciel</li>
+				<li>2017/2018</li>
+				<li>Aminata MAIGA</li>
+				<li>Abdoulaye Oumar LY</li>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h1>Contacts</h1>
+				<li>Appeler au 77 621 64 59 </li>
+				<li>ou 77 865 02 04</li>
+				<li>site web: www.gorendezvous.sn</li>
+				<li>copiright 2018</li>
+	
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<h1>suivez nous sur</h1>
+				<li>Facebook</li>
+				<li>Twitter</li>
+				<li>Instagram</li>
+				<li>WatsApp</li>
+				</div>
+		
+	   </ul>
+   </footer>
+			<script>
+        var i = 0 ;
+        var path = new Array();
+        path[0] = "images/logo.png";
+        path[1] = "images/logo.png";
+        path[2] ="images/slide4.jpg";
+		
+ function swapImage(){
+          document.nameAttribut.src = path[i] ;
+          if(i < path.length - 1)
+              i++;
+          else
+              i = 0 ;
+          setTimeout("swapImage()" , 5000);
+ }
+window.onload = swapImage ;
+</script>
+	<script>
+		( function( $ ) {
+$( document ).ready(function() {
+$('#cssmenu').prepend('<div id="menu-button">Menu</div>');
+	$('#cssmenu #menu-button').on('click', function(){
+		var menu = $(this).next('ul');
+		if (menu.hasClass('open')) {
+			menu.removeClass('open');
+		}
+		else {
+			menu.addClass('open');
+		}
+	});
+});
+} )( jQuery );
+	</script>
+   
+   
+	</body>
+</html>
